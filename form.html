@@ -1,0 +1,89 @@
+<!doctype html>
+
+<html>
+
+	<head>
+		<title>Toaha Group LTD.</title>
+		<meta charset="utf-8">
+	</head>
+
+
+<body>
+
+<form name="Employment" action="send.php" method="post">
+ <table width="600" border="1" cellspacing="2" cellpadding="2">
+    <tr>
+      <td>Employment application </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>First Name</td> <!--name is here as label-->
+      <td><input type="text" name="fname" maxlength="50" /></td>
+    </tr>
+    <tr>
+      <td>Last name</td>
+      <td><input type="text" name="lname" maxlength="50" /></td>
+    </tr>
+    <tr>
+      <td>Position</td>
+      <td>
+            <select name="Position">
+
+               <option value="Ac">Accountant</option>
+               <option value="RE">Receptionist</option>  
+               <option value="AD">Administrator</option>
+               <option value="SU">supervisor</option>
+<!--select menu(option tag) usr for selecting from multiple option-->
+
+            </select>
+      </td>
+    </tr>
+    <tr>
+      <td >Experience Level</td>
+      <td>
+            <select name="Experience Level">
+                
+              <option value="EN">Entry Level</option>
+              <option value="SO">Some Experience</option>
+              <option value="VE">Very Experience</option>
+              
+            </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Job Type</td>
+      <td>
+           <input type="checkbox" name="ft" />Full-Time
+           <input type="checkbox" name="pt"   />part-time
+           <input type="checkbox" name="ct" />Contract
+      </td>
+    </tr>
+    <tr>
+      <td>Employment Status</td>
+      <td>
+            <input type="radio" name="estatus" value="employed"/>Employed
+            <input type="radio" name="estatus" value="unemployed" />Unemployed
+            <input type="radio" name="estatus" value="student"/>Student
+            <!--radio button used for roundtype and use only once
+             -->
+      </td>
+    </tr>
+    <tr>
+      <td>Additional Coomment:</td>
+      <td>
+        <textarea name="Comments" cols="45" rows="5"></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <input type="Submit" name="Submit" value="Submit">
+        <input type="Reset" name="Reset" value="Reset">
+      </td>
+      
+    </tr>
+  </table>
+</form>
+
+</body>
+</html>
